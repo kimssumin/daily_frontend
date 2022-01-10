@@ -1,0 +1,97 @@
+:root {
+  --text-color: #f0f4f5;
+  --background-color: #263343;
+  --accent-color: burlywood;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro";
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--background-color);
+  color: var(--text-color);
+  padding: 8px 12px;
+}
+
+.Dream {
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.Dream i {
+  color: var(--accent-color);
+}
+
+.Tab {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.Tab li {
+  padding: 8px 12px;
+}
+
+.Tab li:hover {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+.icon {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.icon i {
+  padding: 8px 8px;
+}
+
+.toggleBtn {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .Tab {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .Tab li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .icon {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .toggleBtn {
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-size: 24px;
+    color: burlywood;
+  }
+
+  .Tab.active,
+  .icon.active {
+    display: flex;
+  }
+}
