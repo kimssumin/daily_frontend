@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sumintube</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src="https://kit.fontawesome.com/ec9b6104ac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header-->
+    <header>
+        <div class = "logo">
+            <i class="fab fa-youtube"></i>
+            <span class = "title">Youtube</span>
+        </div>
+        <div class = "icon">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+
+    <!--Video player-->
+    <section class = "player">
+        <video controls src = "video/video.mp4"></video>
+    </section>
+
+    
+
+    <div class="infoAndUpNext">
+        <!--Video information-->
+        <section class = "info">
+            <!--Metadata-->
+            <div class = "metadata">
+                <ul class="hashtags">
+                    <li>#DreamCoding</li>
+                    <li>#Apple</li>
+                    <li>#Sumin</li>
+                </ul>
+                <div class="titleAndButton">
+                    <span class = "title">
+                        Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라 만들기 | 프론트엔드 개발자 입문편 : Apple ad.
+                    </span>
+                    <button class = "moreBtn"><i class="fas fa-caret-down"></i></button>
+                </div>
+                <div class="views">
+                    <span class = "views">
+                        IM views 1 months ago
+                    </span>
+                </div>
+            </div>
+            <!--Actions-->
+            <ul class = "actions">
+                <li>
+                    <button><i class="active fas fa-thumbs-up"></i><span>1K</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-share"></i><span>Share</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-plus"></i><span>Save</span></button>
+                </li>
+                <li>
+                    <button><i class="fas fa-flag"></i><span>Report</span></button>
+                </li>
+            </ul>
+            <!--channel name-->
+            <div class = "channel">
+                <div class="metadata">
+                    <img src = "image/logo.png" alt = "" />
+                    <div class = "info">
+                        <span class= "name">드림코딩 by 수민</span>
+                        <span class = "subscribers"> 1M subscribers</span>
+                    </div>
+                </div>
+                <button class="subscribe">SUBSCRIBE</button>
+            </div>
+        </section>
+        <!--Next playlist-->
+        <section class = "UpNext">
+            <span class = "title"> 
+                Up next
+            </span>
+            <ul>
+                <li class = "item">
+                    <div class = "image"><img src="image/logo.png" alt="" /></div>
+                    <div class="info">
+                        <span class="title">Apple iMac</span>
+                        <span class="name">드림코딩 by 수민</span>
+                        <span class="views">82K views</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class = "item">
+                    <div class = "image"><img src="image/logo.png" alt="" /></div>
+                    <div class="info">
+                        <span class="title">Apple iPad</span>
+                        <span class="name">드림코딩 by 수민</span>
+                        <span class="views">92K views</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class = "item">
+                    <div class = "image"><img src="image/logo.png" alt="" /></div>
+                    <div class="info">
+                        <span class="title">Apple AirPods Pro 3rd</span>
+                        <span class="name">드림코딩 by 수민</span>
+                        <span class="views">8K views</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
