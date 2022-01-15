@@ -18,6 +18,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto";
+}
+
 ul {
   list-style: none;
 }
@@ -27,34 +31,61 @@ li {
 }
 
 header {
+  margin: 0px;
   display: flex;
   justify-content: space-between;
-  padding: var(--padding);
+  padding-left: calc(var(--padding) * 2.5);
+  padding-right: calc(var(--padding) * 14px);
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
   background-color: var(--black-color);
   color: var(--white-color);
   text-align: center;
 }
 
 header .home .fa-github {
-  font-size: var(--font-large);
+  font-size: 32px;
   margin-right: var(--padding);
 }
 
 header .home .search {
+  box-sizing: border-box;
+  text-align: center;
   color: var(--grey-dark-color);
-  border: 1px solid var(--grey-dark-color);
-  border-radius: 5%;
-  margin-right: 100px;
+  border: 1.5px solid var(--grey-dark-color);
+  padding-left: 10px;
+  padding-right: 140px;
+  border-radius: 7px 7px 7px 7px;
+  margin-right: var(--padding);
 }
 
-header .menu li {
+header .home .menu {
+  text-align: center;
+  display: inline-block;
+  flex-direction: row;
+  margin-right: var(--padding);
+}
+
+header .home .menu li {
   display: flex;
   flex-direction: row;
   margin-right: var(--padding);
 }
 
-header icon {
+header .icon {
+  display: inline-block;
   text-align: center;
+  justify-content: space-between;
+
+  vertical-align: middle;
+}
+
+header .icon .fa-bell {
+  margin-right: 10px;
+}
+header .icon .fa-caret-down {
+  font-size: var(--font-micro);
+  margin-right: 10px;
 }
 
 header .icon img {
@@ -62,4 +93,48 @@ header .icon img {
   width: 23px;
   height: 23px;
   border-radius: 50%;
+}
+
+.hidden_menu {
+  display: none;
+}
+
+.icon > span.icon {
+  line-height: 48px;
+}
+
+@media screen and (max-width: 870px) {
+  header .home .menu {
+    display: none;
+  }
+
+  .home .search {
+    display: none;
+  }
+
+  .home .fa-github {
+    display: flex;
+    position: absolute;
+    left: 50%;
+  }
+
+  .hidden_menu {
+    display: block;
+    position: absolute;
+    text-align: center;
+    left: 3%;
+    font-size: 24px;
+    color: var(--white-color);
+  }
+
+  .icon .fa-plus {
+    display: none;
+  }
+
+  .icon .fa-caret-down {
+    display: none;
+  }
+  .icon img {
+    display: none;
+  }
 }
