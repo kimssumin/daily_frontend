@@ -26,7 +26,7 @@ while(i < alist.length){
 }
 ```
 
-> using while, if, var
+> <b>using while, if, var</b>
 
 ```javascript
 <input type = "button" value = "night" onclick = "
@@ -91,7 +91,7 @@ while(i < alist.length){
 
 > <b>객체 : 이름이 있는 정리정돈 상자</b>
 
-- <b>쓰기와 읽기 : operator</b>
+- 쓰기와 읽기 : operator</b>
 
 ```javascript
 var coworkers = {
@@ -103,7 +103,7 @@ coworkers.bookkeeper = "dru";
 coworkers["data scientists"] = "taeho";
 ```
 
-- <b>반복문 : key, value</b>
+- 반복문 : key, value
 
 ```javascript
 for (var key in coworkers){
@@ -111,7 +111,7 @@ for (var key in coworkers){
 }
 ```
 
-- <b>Property & Method : 객체에는 함수를 담을 수 있다</b>
+- Property & Method : 객체에는 함수를 담을 수 있다
 
 ```javascript
 coworkers.showAll = function(){
