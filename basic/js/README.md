@@ -4,7 +4,7 @@
 
 ---
 
-> create button (type, value, onclick)
+> <b>create button (type, value, onclick)</b>
 
 ```javascript
 <input
@@ -15,7 +15,7 @@ onclick="document.querySelector('body').style.backgroundColor = 'black';
 >
 ```
 
-> a tag colorize
+> <b>a tag colorize</b>
 
 ```javascript
 var alist = document.querySelectorAll('a');
@@ -55,7 +55,7 @@ while(i < alist.length){
     ">
 ```
 
-> function -> nightDayHandler(this); 로 호출
+> <b>function -> nightDayHandler(this); 로 호출</b>
 
 - Function : Basic - Parameter & Argument - Return
 - function.함수이름(){사용하고자 하는 코드}
@@ -89,11 +89,11 @@ while(i < alist.length){
 </script>
 ```
 
-> 객체 : 이름이 있는 정리정돈 상자
+> <b>객체 : 이름이 있는 정리정돈 상자</b>
 
 - <b>쓰기와 읽기 : operator</b>
 
-```java
+```javascript
 var coworkers = {
     "programmer" : "egoing", "designer": "leezche"
 };
@@ -105,7 +105,7 @@ coworkers["data scientists"] = "taeho";
 
 - <b>반복문 : key, value</b>
 
-```java
+```javascript
 for (var key in coworkers){
     document.write(coworkers[key] + '<br>');
 }
@@ -113,7 +113,7 @@ for (var key in coworkers){
 
 - <b>Property & Method : 객체에는 함수를 담을 수 있다</b>
 
-```java
+```javascript
 coworkers.showAll = function(){
     for (var key in this){
         if(showAll은 제외한다)
