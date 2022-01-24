@@ -6,7 +6,7 @@
 
 > create button (type, value, onclick)
 
-```json
+```javascript
 <input
 type="button"
 value="night"
@@ -17,7 +17,7 @@ onclick="document.querySelector('body').style.backgroundColor = 'black';
 
 > a tag colorize
 
-```json
+```javascript
 var alist = document.querySelectorAll('a');
 var i = 0;
 while(i < alist.length){
@@ -28,7 +28,7 @@ while(i < alist.length){
 
 > using while, if, var
 
-```json
+```javascript
 <input type = "button" value = "night" onclick = "
         var target = document.querySelector('body');
         if(this.value === 'night'){
@@ -60,7 +60,7 @@ while(i < alist.length){
 - Function : Basic - Parameter & Argument - Return
 - function.함수이름(){사용하고자 하는 코드}
 
-```java
+```javascript
 <script>
         function nightDayHandler(self){
             var target = document.querySelector('body');
