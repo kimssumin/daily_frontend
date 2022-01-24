@@ -1,5 +1,7 @@
 ### Night mode & Day mode
 
+##### - 3.html 참고
+
 ---
 
 > create button (type, value, onclick)
@@ -58,7 +60,7 @@ while(i < alist.length){
 - Function : Basic - Parameter & Argument - Return
 - function.함수이름(){사용하고자 하는 코드}
 
-```json
+```java
 <script>
         function nightDayHandler(self){
             var target = document.querySelector('body');
@@ -85,4 +87,39 @@ while(i < alist.length){
             }
         }
 </script>
+```
+
+> 객체 : 이름이 있는 정리정돈 상자
+
+- <b>쓰기와 읽기 : operator</b>
+
+```java
+var coworkers = {
+    "programmer" : "egoing", "designer": "leezche"
+};
+document.write("programmer: " + coworkers.programmer);
+<!--데이터를 넣는 또다른 방법들-->
+coworkers.bookkeeper = "dru";
+coworkers["data scientists"] = "taeho";
+```
+
+- <b>반복문 : key, value</b>
+
+```java
+for (var key in coworkers){
+    document.write(coworkers[key] + '<br>');
+}
+```
+
+- <b>Property & Method : 객체에는 함수를 담을 수 있다</b>
+
+```java
+coworkers.showAll = function(){
+    for (var key in this){
+        if(showAll은 제외한다)
+        document.write(this[key] + '<br>');
+    }
+}
+coworkers.showAll();
+<!--function showAll(){ } 와 동일-->
 ```
