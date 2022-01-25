@@ -4,14 +4,14 @@
     <title>WEB1-html</title>
     <meta charset="utf-8">
     <link rel = "stylesheet" href = "style.css">
+    <script src = "color.js"></script>
 </head>
 
 <body style = "background-color: white; color : black;">
     <h1><a href = "html&internet.html">WEB</a></h1>
-    <input type = "button" value = "night" onclick = "document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';">
-    <input type = "button" value = "day" onclick = "document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';">
+    <input type = "button" value = "night" onclick = "
+        nightDayHandler(this);
+    ">
     <div id = "grid">
         <ol>
             <li><a href = "1.html" id = "active">HTML</a></li>
