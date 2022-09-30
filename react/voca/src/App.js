@@ -1,17 +1,26 @@
 
-import './App.css';
-import Hello from './component/Hello'
-import Welcome from './component/Welcome'
+//import './App.css';
+import Header from './component/Header';
+import DayList from './component/DayList';
+import Day from './component/Day';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
   
   return (
-    <div className="App">
-      <Hello />
-      <Welcome age = {10}/>
-      <Welcome age = {20}/>
-      <Welcome age = {30}/>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Header />
+        <Routes> 
+          <Route exact path = "/" element = {<DayList/>}>
+          </Route>
+          <Route path = "/day" element = {<Day/>}>
+          </Route>
+        </Routes>
+        
+      </div>
+    </BrowserRouter>
+    
   );
 }
 
