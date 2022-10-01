@@ -1,20 +1,23 @@
 //import dummy from '../db/data.json'
 import {Link} from 'react-router-dom'
-import {useState, useEffect} from 'react';
+//import {useState, useEffect} from 'react';
+import useFetch from '../hooks/useFetch';
 
 
 export default function DayList(){
-  const [days, setDays] = useState([]);
 
-  useEffect(() =>{
-    fetch('http://localhost:3001/days')
-      .then(res =>{
-        return res.json()
-      })
-      .then(data =>{
-        setDays(data);
-      })
-  }, []) //count 일때만 실행 ((의존성))
+  const days = useFetch('http://localhost:3001/days');
+  // const [days, setDays] = useState([]);
+
+  // useEffect(() =>{
+  //   fetch('http://localhost:3001/days')
+  //     .then(res =>{
+  //       return res.json()
+  //     })
+  //     .then(data =>{
+  //       setDays(data);
+  //     })
+  // }, []) //count 일때만 실행 ((의존성))
 
   return (
     <>

@@ -2,26 +2,13 @@
 //import dummy from '../db/data.json'
 import {useParams} from 'react-router-dom';
 import Word from './Word'
-import {useState, useEffect} from 'react'
+import useFetch from '../hooks/useFetch';
 
 //dummy words
 export default function Day(){
 
   const day = useParams().day;
-  // const wordList = dummy.words.filter(word =>(
-  //   word.day === Number(day)
-  // ))
-  const [words, setWords] = useState([]);
-
-  useEffect(() =>{
-    fetch(`http://localhost:3001/words?day=${day}`)
-      .then(res =>{
-        return res.json()
-      })
-      .then(data =>{
-        setWords(data);
-      })
-  }, [day]) //count 일때만 실행 ((의존성))
+  const words = useFetch(`http://localhost:3001/words?day=${day}`)
 
 
   return (
@@ -37,3 +24,18 @@ export default function Day(){
     </table>
   </>)
 }
+
+  // const wordList = dummy.words.filter(word =>(
+  //   word.day === Number(day)
+  // ))
+  //const [words, setWords] = useState([]);
+
+  // useEffect(() =>{
+  //   fetch(`http://localhost:3001/words?day=${day}`)
+  //     .then(res =>{
+  //       return res.json()
+  //     })
+  //     .then(data =>{
+  //       setWords(data);
+  //     })
+  // }, [day]) //count 일때만 실행 ((의존성))
