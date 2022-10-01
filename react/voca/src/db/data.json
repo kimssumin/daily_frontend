@@ -15,16 +15,13 @@
     {
       "day": 4,
       "id": 4
+    },
+    {
+      "day": 5,
+      "id": 5
     }
   ],
   "words": [
-    {
-      "id": 1,
-      "day": 1,
-      "eng": "book",
-      "kor": "책",
-      "isDone": false
-    },
     {
       "id": 3,
       "day": 2,
@@ -82,11 +79,25 @@
       "id": 11
     },
     {
-      "day": 3,
+      "day": "3",
       "eng": "apple",
       "kor": "사과",
       "isDone": false,
       "id": 12
+    },
+    {
+      "day": "1",
+      "eng": "book",
+      "kor": "책",
+      "isDone": false,
+      "id": 13
+    },
+    {
+      "day": "1",
+      "eng": "computer",
+      "kor": "컴퓨터",
+      "isDone": false,
+      "id": 14
     }
   ]
 }
